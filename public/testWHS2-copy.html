@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html>
+<head>
+<title>PhotoQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="http://web.cs.ucdavis.edu/~amenta/s18/reset.css">
+<!--<link rel="stylesheet" type="text/css" href="photoGallery.css">-->
+<link rel="stylesheet" type="text/css" href="testWHS2.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700i,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class= "title">
+  <h1>PHOTOQ</h1>
+  <div id="top">
+    <div id="query">
+      <input class="main" id="num" placeholder="" onkeyup="lookUpTags()">
+      <button id="searchButton" onclick="photoList()"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="scrollbar" id="autoCompleteDiv">
+    </div>
+  </div>
+</div>
+
+
+<main>
+
+
+<div id="photoDisplay">
+  <div id="react">
+  Nothing's been searched yet! - try searching!
+  </div>
+</div>
+
+
+</main>
+
+<!-- React and the photo gallery component  -->
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="prop-types.js"></script>
+    <script src="react-photo-gallery.js"></script>
+
+<!-- Javascript for this page  -->
+    <script src="testWHS2-copy.js"> </script>
+
+
+</body>
+</html>

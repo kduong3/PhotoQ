@@ -1,0 +1,280 @@
+
+/* title */
+
+body {
+    min-height: 100vh;  /* need this line to tell body to fill viewport */
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /*margin: 20px;*/
+}
+
+a {
+  display: none;
+}
+
+div.title {
+  display: flex;
+  margin: 20px;
+}
+
+h1 {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 900;
+  text-align: left;
+  color: #1b3763;
+}
+
+div#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+div#query {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 55.4%;
+    height: 50px;
+    font-size: large;
+    color: #ddd;
+}
+
+i {
+  color: #1b3763;
+  padding: 0px 10px;
+}
+
+input.main {
+  font-size: medium;
+  color: dimgrey;
+  font-family: 'Lato', sans-serif;
+  padding-left: 18px;
+  width: 100%;
+  border: 0.75px solid #1b3763;
+}
+
+
+/*** autocomplete content ***/
+
+#autoCompleteDiv {
+  display: none;
+  width: 53.55%;
+  height: 63%;
+  position: absolute;
+  top: 70px;
+  /* ... floating above everything else ... */
+  z-index: 2;
+  border: 0.75px solid #1b3763;
+  border-top-width: 0;
+  /* ... with partial transparency,
+         to make everything else look greyed out */
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+}
+
+hr {
+  color: navy;
+  background-color: #1b3763;
+  height: 0.75px;
+  border: 0;
+  width: 100%;
+}
+
+div.autoPopUp {
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  margin: 18px;
+  background-color: rgb(255,255,255); /* Must set the background color here,
+      otherwise it inherits from the parent */
+  position: relative;
+  z-index: 2;
+  color: #b3b3b3;
+}
+
+.descript {
+  font-style: italic;
+}
+
+div.chosenDiv {
+
+}
+
+#chosenTags {
+  margin:  0px 10px 17px 0px;
+}
+
+div.cTags {
+  display: flex;
+}
+
+div.optionsDiv {
+
+}
+
+div.oTagDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+p.acTagText {
+  position: relative;
+  padding: 7px;
+  zIndex: 2;
+  background-color: #94b8bf;
+  border-radius: 5px;
+  color: white;
+  word-break: break-all;
+  width: fit-content;
+}
+
+i.material-icons {
+  transform: scaleX(-1);
+  align-self: flex-end;
+}
+
+
+/*** main content + photo tiles ***/
+
+main {
+    background-color: #edecec;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 0 auto;
+}
+
+#photoDisplay {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#react {
+    text-align: center;
+}
+
+/* Photo tile - position and size will be given by PhotoGallery */
+div.tile {
+    display: flex;
+    backgroundColor: #eee;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+div.normalControls {
+	 display: none;
+}
+
+div.selectedControls {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   position: absolute;
+   left: 10%;
+   right: 10%;
+}
+
+div.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.textBox {
+  display: flex;
+  margin: 5px;
+  position: relative;
+  padding: 7px;
+  zIndex: 2;
+  background-color: #94b8bf;
+  border-radius: 5px;
+  color: white;
+  word-break: break-all;
+}
+
+/* Tag styling */
+p.tagText {
+   /*margin: 5px;
+   margin-left: 0;
+   margin-right: 20px;*/
+   position: relative;
+   padding: 0px;
+   zIndex: 2;
+   background-color: #94b8bf;;
+   border-radius: 5px;
+   color: white;
+   word-break: break-all;
+   width: fit-content;
+}
+
+div.inputBox {
+  display: flex;
+  margin: 5px 0px 5px 5px;
+  position: relative;
+  zIndex: 2;
+  background-color: #94b8bf;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  word-break: break-all;
+  width: 100px;
+}
+
+
+input.textInput {
+  font-family: 'Lato', sans-serif;
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  color: white;
+}
+
+button.inputButton {
+  padding-right: 0px;
+  padding-left: 25px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+button#searchButton {
+  font-size: 25px;
+  background-color: white;
+  border-style: solid;
+  border-color: #1b3763;
+  border-width: 0.75px 0.75px 0.75px 0px;
+}
+
+
+img {
+    display: block;
+}
+
+/* so far nothing special when image selected */
+img.normal {
+}
+
+img.selected {
+}
