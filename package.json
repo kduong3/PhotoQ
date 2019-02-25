@@ -1,0 +1,21 @@
+{
+  "name": "photoq",
+  "version": "0.1.0",
+  "description": "A node.js app to display photos",
+  "main": "SnDserver2Solution.js",
+  "scripts": {
+    "start": "node SnDserver2Solution.js"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kduong3/kduong3.github.io"
+  },
+  "keywords": [
+    "node",
+    "photoq"
+  ],
+  "author": "Kathy Duong"
+}
