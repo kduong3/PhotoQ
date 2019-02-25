@@ -17,5 +17,6 @@
     "node",
     "photoq"
   ],
-  "author": "Kathy Duong"
+  "author": "Kathy Duong",
+  "license": "MIT"
 }
