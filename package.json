@@ -6,6 +6,11 @@
   "scripts": {
     "start": "node SnDserver2Solution.js"
   },
+  "dependencies": {
+    "node-static": "^0.7.11",
+    "http": "^0.3.4",
+    "sqlite3": "^4.0.6"
+  },
   "engines": {
     "node": "4.0.0"
   },
